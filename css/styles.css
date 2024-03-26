@@ -1,0 +1,225 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.calculator {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid fuchsia;
+}
+
+.screen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 5px ridge yellowgreen;
+    overflow-wrap: anywhere;
+    padding: 20px;
+}
+
+.keypad {
+    display: flex;
+    flex-direction: column;
+    border: 5px double blueviolet;
+}
+
+#division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+#nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear,
+#backspace {
+    display: flex;
+    border: 1px solid brown;
+    flex: 1 0 0;
+    justify-content: center;
+    align-items: center;
+    background-color: darksalmon;
+}
+
+@media only screen and (max-width: 320px) {
+    .calculator {
+        width: 90%;
+        height: 90vh;
+    }
+
+    .screen {
+        height: 10vh;
+        margin: 0.2vh;
+        font-size: 3.5vw;
+    }
+
+    .keypad {
+        height: 80vh;
+        margin: 0.2vh;
+    }
+
+    #division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+    #nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear, 
+    #backspace {
+        height: 15vh;
+        margin: 0.2vh;
+        font-size: 12px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 375px) {
+    .calculator {
+        width: 90%;
+        height: 90vh;
+    }
+
+    .screen {
+        height: 10vh;
+        margin: 0.2vh;
+        font-size: 3.5vw;
+    }
+
+    .keypad {
+        height: 80vh;
+        margin: 0.2vh;
+    }
+
+    #division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+    #nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear, 
+    #backspace {
+        height: 15vh;
+        margin: 0.2vh;
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 425px) {
+    .calculator {
+        width: 90%;
+        height: 90vh;
+    }
+
+    .screen {
+        height: 10vh;
+        margin: 0.2vh;
+        font-size: 3.5vw;
+    }
+
+    .keypad {
+        height: 80vh;
+        margin: 0.2vh;
+    }
+
+    #division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+    #nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear, 
+    #backspace {
+        height: 15vh;
+        margin: 0.2vh;
+        font-size: 20px;
+    }
+}
+
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .calculator {
+        width: 60%;
+        height: 60vh;
+    }
+
+    .screen {
+        height: 10vh;
+        margin: 0.2vh;
+        font-size: 3vw;
+    }
+
+    .keypad {
+        height: 50vh;
+        margin: 0.2vh;
+    }
+
+    #division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+    #nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear, 
+    #backspace {
+        height: 9.5vh;
+        margin: 0.2vh;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .calculator {
+        width: 60%;
+        height: 90vh;
+    }
+
+    .screen {
+        height: 15vh;
+        margin: 0.2vh;
+        font-size: 2.5vw;
+    }
+
+    .keypad {
+        height: 75vh;
+        margin: 0.2vh;
+    }
+
+    #division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+    #nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear, 
+    #backspace {
+        height: 14.5vh;
+        margin: 0.2vh;
+        font-size: 30px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .calculator {
+        width: 50%;
+        height: 90vh;
+    }
+
+    .screen {
+        height: 15vh;
+        margin: 0.2vh;
+        font-size: 2vw;
+    }
+
+    .keypad {
+        height: 75vh;
+        margin: 0.2vh;
+    }
+
+    #division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+    #nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear, 
+    #backspace {
+        height: 14.5vh;
+        margin: 0.2vh;
+        font-size: 35px;
+    }
+}
+
+@media only screen and (min-width: 1441px) and (max-width: 2560px) {
+    .calculator {
+        width: 40%;
+        height: 90vh;
+    }
+
+    .screen {
+        height: 15vh; 
+        margin: 0.2vh;
+        font-size: 1.6vw;
+    }
+
+    .keypad {
+        height: 75vh;
+        margin: 0.2vh;
+    }
+
+    #division, #multiplication, #subtraction, #addition, #six, #seven, #eight,
+    #nine, #two, #three, #four, #five, #zero, #one, #dot, #equals, #clear, 
+    #backspace {
+        height: 14.5vh;
+        margin: 0.2vh;
+        font-size: 45px;
+    }
+}
+
+.first-row, .second-row, .third-row, .fourth-row, .fifth-row {
+    display: flex;
+    justify-content: space-between;
+}
